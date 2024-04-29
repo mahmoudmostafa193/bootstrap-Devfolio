@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: "Roboto", sans-serif;
 }
 /* image background */
@@ -46,23 +46,23 @@ a:hover::before {
   visibility: visible;
   width: 60%;
 } */
-.nav-link{
+.nav-link {
   position: relative;
 }
-.nav-link::after{
-  content: '';
+.nav-link::after {
+  content: "";
   height: 2px;
-  width: 60%;
+  width: 0%;
   background-color: #fff;
-left: 7px;
-bottom: -3px;
+  left: 7px;
+  bottom: -3px;
   position: absolute;
-  opacity: 0;
   transition: all 0.5s ease-in-out;
   pointer-events: none;
 }
-.nav-link:hover::after{
-  opacity: 1;
+
+.nav-link:hover::after {
+  width: 70%;
 }
 .word {
   position: relative;
@@ -277,85 +277,86 @@ bottom: -3px;
   }
 }
 
-.primary{
+.primary {
   transform: translatey(300px);
   text-align: center;
-  font-size:50px;
+  font-size: 50px;
 }
-.primary .size{
+.primary .size {
   font-size: 70px;
 }
 
-.primary::after{
-  content: '';
-  animation:typing 8s infinite alternate;
-
+.primary::after {
+  content: "";
+  animation: typing 8s infinite alternate;
 }
 
-@keyframes typing{
-  0%{
-    content: '';
+@keyframes typing {
+  0% {
+    content: "";
   }
-  5%{
-    content: 'd';
+  5% {
+    content: "D";
   }
-  10%{
-    content: 'de';
+  10% {
+    content: "De";
   }
-  15%{
-    content: 'des';
+  15% {
+    content: "Des";
   }
-  20%{
-    content: 'desi';
+  20% {
+    content: "Desi";
   }
-  25%{
-    content: 'desig';
+  25% {
+    content: "Desig";
   }
-  30%{
-    content: 'designe';
+  30% {
+    content: "Designe";
   }
-  35%{
-    content: 'designer|';
+  35% {
+    content: "Designer|";
   }
-  40%{
-    content: 'de';
+  40% {
+    content: "De";
   }
-  45%{
-    content: 'deve';
+  45% {
+    content: "Deve";
   }
-  50%{
-    content: 'develo';
+  50% {
+    content: "Develo";
   }
-  55%{
-    content: 'develope';
+  55% {
+    content: "Develope";
   }
-  60%{
-    content: 'developer|';
+  60% {
+    content: "Developer|";
   }
-  65%{
-    content: '';
+  65% {
+    content: "";
+  }
+  70% {
+    content: "Fr";
+  }
+  75% {
+    content: "Free";
+  }
+  80% {
+    content: "Free la";
+  }
+  85% {
+    content: "Free lan";
+  }
+  90% {
+    content: "Free lance";
+  }
+  90% {
+    content: "Free lancer";
+  }
+  100% {
+    content: "Free lancer|";
+  }
+}
 
-  }
-  70%{
-    content:'fr'
-  }
-  75%{
-    content:'free'
-  }
-  80%{
-    content:'free la'
-  }
-  85%{
-    content:'free lan'
-  }
-  90%{
-    content:'free lance'
-  }
-  90%{
-    content:'free lancer'
-  }
-  100%{
-    content:'free lancer|'
-  }
-
+html {
+  scroll-behavior: smooth;
 }
